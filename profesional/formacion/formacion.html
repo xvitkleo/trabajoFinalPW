@@ -1,157 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Formacion.css">
-    <link rel="stylesheet" href="../../rsrc/nav/nav.css">
-    <link rel="stylesheet" href="../../rsrc/boton/boton.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <title>Formacion</title>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="formacion.css">
+      <link rel="stylesheet" href="../../rsrc/nav/nav.css">
+      <link rel="stylesheet" href="../../rsrc/boton/boton.css">
+      <link rel="stylesheet" href="../../rsrc/modal/modal.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+      <title>Experiencia</title>
+  </head>
+
+  <body>
     <div>
-        <nav class="navbar navbar-light fixed">
-          <span class="navbar-brand mb-0 h1">
-              <a style = "font-size: 1.5rem;"href="">CV Manager</a>
-          </span>
-          <div class="row">
-              <a class="nav-item nav-link boton-navbar" href="../cuenta/cuenta.html">MI CUENTA</a>
-              <a class="nav-item nav-link boton-navbar" href="../entidades/entidades.html">ENTIDADES</a>
-              <a class="nav-item nav-link boton-navbar" href="../ocupaciones/ocupaciones.html">OCUPACIONES</a>
-              <a class="nav-item nav-link boton-navbar" href="../experiencia/experiencia.html">EXPERIENCIA</a>
-              <a class="nav-item nav-link boton-navbar" href="../formacion/Formacion.html">FORMACION</a>
-              <a class="nav-item nav-link boton-navbar" href="../../index.html">CERRAR SESION</a>
-            </div>
-        </nav>
+      <nav class="navbar navbar-light fixed">
+        <span class="navbar-brand mb-0 h1">
+            <a style = "font-size: 1.5rem;"href="">CV Manager</a>
+        </span>
+        <div class="row">
+            <a class="nav-item nav-link boton-navbar" href="../cuenta/cuenta.html">MI CUENTA</a>
+            <a class="nav-item nav-link boton-navbar" href="../entidades/entidades.html">ENTIDADES</a>
+            <a class="nav-item nav-link boton-navbar" href="../ocupaciones/ocupaciones.html">OCUPACIONES</a>
+            <a class="nav-item nav-link boton-navbar" href="../experiencia/experiencia.html">EXPERIENCIA</a>
+            <a class="nav-item nav-link boton-navbar" href="../formacion/Formacion.html">FORMACION</a>
+            <a class="nav-item nav-link boton-navbar" href="../../index.html">CERRAR SESION</a>
+          </div>
+      </nav>
+    </div>
+
+    <div class="container1">
+      <h1>Experiencias</h1>
+      <div class="botones">
+        <button type="button" class="boton crear-formacion_btn">Registrar nueva formacion</button>
       </div>
 
-    <h1>Formacion</h1>
-    
-    <div class="container">
-        <button type="button" class="btn btn-secondary">Inicio</button>
-        <button type="button" class="btn btn-secondary" onclick="mostrar()">Registrar nueva formacion</button>
-        <label id="mensaje1"></label>
-    </div>
-    <form id="bloqueRegistro" align="top">
-        <label >Estudio/curso:</label>
-        <input type="text"><br>
-    <label >Entidad:</label>
-    <select>
-        <option>Entidad1</option>
-        <option>Entidad2</option>
-        <option>Entidad3</option>
-        <option>Entidad4</option>
-    </select><br>
-    <label >Detalle:</label>
-    <input type="text"><br>
-    <label >Año fin:</label>
-    <input type="text"><br>
-    <input type="radio" id="Visibilidad" name="visi" value="visible">
-        <label for="male">visible</label>
-        <input type="radio" id="Visibilidad2" name="visi" value="oculto">
-        <label for="female">oculto</label><br>
-        <input type="submit" value="OK" onclick="ocultar()">
-    </form>
-
-
-    <div class="bloqueExp" >
-    <table style="width:100%" id="customers">
-        <tr>
-        <th rowspan="3" align="center">Estudio/curso</th>
-        <th>Entidad</th>
-        <th>Detalle</th>
-        <th>Año fin</th>
-        <th rowspan="3" align="center">
-            <button type="button" class="btn btn-secondary" onclick="mostrar()">
-                Actualizar
-            </button>
-        </th>
-        </tr>
-        <tr>
-        
-        <td>PUCP</td>
-        <td>quinto superior</td>
-        <td>2014</td>
-        </tr>
-        <tr>
-        
-        <td>San marcos</td>
-        <td>tercio superior</td>
-        <td>2018</td>
-        </tr>
-    </table>
-    </div>
-    <div class="bloqueExp">
+      <div class="bloqueExp" >
         <table style="width:100%" id="customers">
-            <tr>
-            <th rowspan="3" align="center">Estudio/curso</th>
+          <tr>
+            <th rowspan="3">Estudio/curso</th>
             <th>Entidad</th>
             <th>Detalle</th>
             <th>Año fin</th>
-            <th rowspan="3" align="center">
+            <th rowspan="3" class="row-boton">
                 <button type="button" class="btn btn-secondary" onclick="mostrar()">
                     Actualizar
                 </button>
             </th>
-            </tr>
-            <tr>
-            
+          </tr>
+          <tr>            
+            <td>PUCP</td>
+            <td>quinto superior</td>
+            <td>2014</td>
+          </tr>
+          <tr>            
+            <td>San marcos</td>
+            <td>tercio superior</td>
+            <td>2018</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="bloqueExp">
+        <table style="width:100%" id="customers">
+          <tr>
+            <th rowspan="3">Estudio/curso</th>
+            <th>Entidad</th>
+            <th>Detalle</th>
+            <th>Año fin</th>
+            <th rowspan="3" class="row-boton">
+                <button type="button" class="btn btn-secondary" onclick="mostrar()">
+                    Actualizar
+                </button>
+            </th>
+          </tr>
+          <tr>
             <td>UPN</td>
             <td>quinto superior</td>
             <td>2014</td>
-            </tr>
-            <tr>
-            
+          </tr>
+          <tr>
             <td>UCP</td>
             <td>tercio superior</td>
             <td>2019</td>
-            </tr>
+          </tr>
         </table>
-        </div>
-        <div class="bloqueExp">
-            <table style="width:100%" id="customers">
-                <tr>
-                <th rowspan="3" align="center">Estudio/curso</th>
-                <th>Entidad</th>
-                <th>Detalle</th>
-                <th>Año fin</th>
-                <th rowspan="3" align="center">
-                    <button type="button" class="btn btn-secondary" onclick="mostrar()">
-                        Actualizar
-                    </button>
-                </th>
-                </tr>
-                <tr>
-                
-                <td>UTP</td>
-                <td>medio superior</td>
-                <td>2016</td>
-                </tr>
-                <tr>
-                
-                <td>San marcos</td>
-                <td>tercio superior</td>
-                <td>2017</td>
-                </tr>
-            </table>
-            </div>
-            <div>
-                <TABLE BORDER class="barra">
-                    <TR>
-                        <TD>Pag.</TD> <TD>atras</TD> <TD>#</TD> <TD>siguiente</TD>
-                    </TR>
-                </TABLE>
-            </div>
-</body>
-<script>
-function mostrar(){
-document.getElementById("bloqueRegistro").style.display="block";
-}
-function ocultar(){
-document.getElementById("bloqueRegistro").style.display="none";
-document.getElementById("mensaje1").textContent="Cambios guardados";
-}
-</script>
+      </div>
+
+      <div class="bloqueExp">
+        <table style="width:100%" id="customers">
+          <tr>
+            <th rowspan="3">Estudio/curso</th>
+            <th>Entidad</th>
+            <th>Detalle</th>
+            <th>Año fin</th>
+            <th rowspan="3" class="row-boton">
+                <button type="button" class="btn btn-secondary" onclick="mostrar()">
+                    Actualizar
+                </button>
+            </th>
+          </tr>
+          <tr>              
+            <td>UTP</td>
+            <td>medio superior</td>
+            <td>2016</td>
+          </tr>
+          <tr>              
+            <td>San marcos</td>
+            <td>tercio superior</td>
+            <td>2017</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <div class="modal-crear">            
+    <form> 
+      <div class="close-modal">X</div>
+      <div><p>REGISTRAR FORMACION</p></div>
+
+      <div>
+        <input placeholder="Estudio/curso" required>    
+      </div>
+
+      <div>        
+        <label for="entidad">Entidad:</label>
+        <select id="entidad" size="1">
+          <option>Entidad1</option>
+          <option>Entidad2</option>
+          <option>Entidad3</option>
+          <option>Entidad4</option>
+        </select>
+      </div>
+
+      <div>
+          <input placeholder="Detalle" required>    
+      </div>
+
+      <div>
+        <input placeholder="Ano fin" required>    
+      </div>
+        
+      <div style="display: flex;">
+        <input type="radio" id="Visibilidad" name="visi" value="visible">
+        <label for="male">visible</label>
+        <input type="radio" id="Visibilidad2" name="visi" value="oculto">
+        <label for="female">oculto</label>
+      </div>        
+        
+        <div><button type="submit" class="boton registrar-formacion">Registrar</button></div>
+    </form>
+  </div>    
+
+  <script src="main.js"></script>
+  <script src="../../rsrc/modal/main.js"></script>
 </html>

@@ -24,12 +24,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .modal-crear form .close-modal {
+  margin: 18px;
   position: absolute;
-  top: 30%;
-  left: 56%;
+  top: 0;
+  right: 0;
   cursor: pointer;
 }
 

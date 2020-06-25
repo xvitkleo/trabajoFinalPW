@@ -12,11 +12,13 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;   
+        position: relative;     
         .close-modal {
+            margin: 18px;
             position: absolute;
-            top: 30%;
-            left: 56%;
+            top: 0;
+            right: 0;
             cursor: pointer;
         }
         div {
