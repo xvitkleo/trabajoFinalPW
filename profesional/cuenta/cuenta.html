@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="profesional.css">
+    <link rel="stylesheet" href="cuenta.css">
     <link rel="stylesheet" href="../../rsrc/modal/modal.css">
     <link rel="stylesheet" href="../../rsrc/nav/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>MiCV</title>
 </head>
 <body>
-    <div>
-      <nav class="navbar navbar-light fixed">
-        <span class="navbar-brand mb-0 h1">
-            <a style = "font-size: 1.5rem;"href="">CV Manager</a>
-        </span>
-        <div class="row">
-            <a class="nav-item nav-link boton-navbar" href="../cuenta/cuenta.html">MI CUENTA</a>
-            <a class="nav-item nav-link boton-navbar" href="../entidades/entidades.html">ENTIDADES</a>
-            <a class="nav-item nav-link boton-navbar" href="../ocupaciones/ocupaciones.html">OCUPACIONES</a>
-            <a class="nav-item nav-link boton-navbar" href="../experiencia/experiencia.html">EXPERIENCIA</a>
-            <a class="nav-item nav-link boton-navbar" href="../../login.html">CERRAR SESION</a>
-          </div>
-      </nav>
-    </div>
-
-<hr>
-  <div id="datos">
-      <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputnombre">Nombre</label>
-              <input type="text" class="form-control" id="inputnombre" placeholder="nombre">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputapellido">Apellido</label>
-              <input type="text" class="form-control" id="inputapellido" placeholder="Apellido">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputtelefono">telefono</label>
-            <input type="text" class="form-control" id="inputtelefono" placeholder="xxxxxxxxxxxxx">
-          </div>
-          <div class="form-group">
-            <label for="inputurl">Url-Linkedin</label>
-            <input type="text" class="form-control" id="inputurl" placeholder="www.linkedin.com/....">
-          </div>
-          
-          <button type="submit" class="btn btn-primary">Guardar</button>
-        </form>
+  <div>
+    <nav class="navbar navbar-light fixed">
+      <span class="navbar-brand mb-0 h1">
+          <a style = "font-size: 1.5rem;"href="">CV Manager</a>
+      </span>
+      <div class="row">
+          <a class="nav-item nav-link boton-navbar" href="../cuenta/cuenta.html">MI CUENTA</a>
+          <a class="nav-item nav-link boton-navbar" href="../entidades/entidades.html">ENTIDADES</a>
+          <a class="nav-item nav-link boton-navbar" href="../ocupaciones/ocupaciones.html">OCUPACIONES</a>
+          <a class="nav-item nav-link boton-navbar" href="../experiencia/experiencia.html">EXPERIENCIA</a>
+          <a class="nav-item nav-link boton-navbar" href="../../index.html">CERRAR SESION</a>
+        </div>
+    </nav>
   </div>
-<hr>
+
+  <div class="container" id="micuenta">
+    <div class="align-container">
+      <form>
+        <div class="nombre-apellido">
+          <div>
+            <label for="inputnombre">Nombre</label>
+            <input type="text" class="form-control" id="inputnombre" placeholder="nombre">
+          </div>
+          <div>
+            <label for="inputapellido">Apellido</label>
+            <input type="text" class="form-control" id="inputapellido" placeholder="Apellido">
+          </div>
+        </div>
+
+        <div>
+          <label for="inputtelefono">telefono</label>
+          <input type="text" class="form-control" id="inputtelefono" placeholder="xxxxxxxxxxxxx">
+        </div>
+
+        <div>
+          <label for="inputurl">Url-Linkedin</label>
+          <input type="text" class="form-control" id="inputurl" placeholder="www.linkedin.com/....">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>     
+  </div>   
+
 </body>

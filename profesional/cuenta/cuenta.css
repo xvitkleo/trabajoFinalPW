@@ -3,16 +3,6 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -37,17 +27,17 @@ body {
 }
 
 .container .align-container form div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container .align-container form .nombre-apellido {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  margin: 20px;
 }
 
-.container .align-container form div p {
-  margin: 1px;
+.container .align-container form .nombre-apellido div {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=cuenta.css.map */

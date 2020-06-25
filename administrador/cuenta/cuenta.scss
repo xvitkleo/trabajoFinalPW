@@ -3,19 +3,6 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.navbar {
-    border-bottom: solid rgba(211, 211, 211, 0.61);
-    padding-right: 20px;
-    box-sizing: border-box;
-    a {
-        color: black;
-        font-weight: bold;
-        &:hover {            
-            text-decoration: underline;
-        }
-    }
-}
-
 body {
     display: flex;
     flex-direction: column;

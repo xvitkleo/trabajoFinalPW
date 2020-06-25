@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {    
+    flex-grow: 1;   
+    .align-container {        
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+        form {            
+            padding: 10px 50px 10px 50px;
+            border: solid 5px lightgray;
+            margin: auto;
+            div {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .nombre-apellido {
+                display: flex;
+                div {
+                    margin-right: 20px;
+                }
+            }
+        }        
+    }
+}
