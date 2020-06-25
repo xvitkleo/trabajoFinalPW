@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+  border-bottom: solid rgba(211, 211, 211, 0.61);
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar a {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .align-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-top: 50px;
+}
+
+.container .align-container form {
+  padding: 10px 50px 10px 50px;
+  border: solid 5px lightgray;
+  margin: auto;
+}
+
+.container .align-container form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 20px;
+}
+
+.container .align-container form div p {
+  margin: 1px;
+}
+/*# sourceMappingURL=administrador.css.map */

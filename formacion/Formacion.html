@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Formacion.css">
+    <title>Formacion</title>
+</head>
+<body>
+    <h1>Formacion</h1>
+    
+    <div class="container">
+        <button type="button" class="btn btn-secondary">Inicio</button>
+        <button type="button" class="btn btn-secondary" onclick="mostrar()">Registrar nueva formacion</button>
+        <label id="mensaje1"></label>
+    </div>
+    <form id="bloqueRegistro" align="top">
+        <label >Estudio/curso:</label>
+        <input type="text"><br>
+    <label >Entidad:</label>
+    <select>
+        <option>Entidad1</option>
+        <option>Entidad2</option>
+        <option>Entidad3</option>
+        <option>Entidad4</option>
+    </select><br>
+    <label >Detalle:</label>
+    <input type="text"><br>
+    <label >Año fin:</label>
+    <input type="text"><br>
+    <input type="radio" id="Visibilidad" name="visi" value="visible">
+        <label for="male">visible</label>
+        <input type="radio" id="Visibilidad2" name="visi" value="oculto">
+        <label for="female">oculto</label><br>
+        <input type="submit" value="OK" onclick="ocultar()">
+    </form>
+
+
+    <div class="bloqueExp" >
+    <table style="width:100%" id="customers">
+        <tr>
+        <th rowspan="3" align="center">Estudio/curso</th>
+        <th>Entidad</th>
+        <th>Detalle</th>
+        <th>Año fin</th>
+        <th rowspan="3" align="center">
+            <button type="button" class="btn btn-secondary" onclick="mostrar()">
+                Actualizar
+            </button>
+        </th>
+        </tr>
+        <tr>
+        
+        <td>PUCP</td>
+        <td>quinto superior</td>
+        <td>2014</td>
+        </tr>
+        <tr>
+        
+        <td>San marcos</td>
+        <td>tercio superior</td>
+        <td>2018</td>
+        </tr>
+    </table>
+    </div>
+    <div class="bloqueExp">
+        <table style="width:100%" id="customers">
+            <tr>
+            <th rowspan="3" align="center">Estudio/curso</th>
+            <th>Entidad</th>
+            <th>Detalle</th>
+            <th>Año fin</th>
+            <th rowspan="3" align="center">
+                <button type="button" class="btn btn-secondary" onclick="mostrar()">
+                    Actualizar
+                </button>
+            </th>
+            </tr>
+            <tr>
+            
+            <td>UPN</td>
+            <td>quinto superior</td>
+            <td>2014</td>
+            </tr>
+            <tr>
+            
+            <td>UCP</td>
+            <td>tercio superior</td>
+            <td>2019</td>
+            </tr>
+        </table>
+        </div>
+        <div class="bloqueExp">
+            <table style="width:100%" id="customers">
+                <tr>
+                <th rowspan="3" align="center">Estudio/curso</th>
+                <th>Entidad</th>
+                <th>Detalle</th>
+                <th>Año fin</th>
+                <th rowspan="3" align="center">
+                    <button type="button" class="btn btn-secondary" onclick="mostrar()">
+                        Actualizar
+                    </button>
+                </th>
+                </tr>
+                <tr>
+                
+                <td>UTP</td>
+                <td>medio superior</td>
+                <td>2016</td>
+                </tr>
+                <tr>
+                
+                <td>San marcos</td>
+                <td>tercio superior</td>
+                <td>2017</td>
+                </tr>
+            </table>
+            </div>
+            <div>
+                <TABLE BORDER class="barra">
+                    <TR>
+                        <TD>Pag.</TD> <TD>atras</TD> <TD>#</TD> <TD>siguiente</TD>
+                    </TR>
+                </TABLE>
+            </div>
+
+            
+            
+            
+
+</body>
+<script>
+function mostrar(){
+document.getElementById("bloqueRegistro").style.display="block";
+}
+function ocultar(){
+document.getElementById("bloqueRegistro").style.display="none";
+document.getElementById("mensaje1").textContent="Cambios guardados";
+}
+</script>
+</html>

@@ -1,0 +1,65 @@
+.modal-crear {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.164);
+}
+
+.modal-crear form {
+  padding: 30px;
+  margin: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal-crear form .close-modal {
+  position: absolute;
+  top: 30%;
+  left: 56%;
+  cursor: pointer;
+}
+
+.modal-crear form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  margin: 10px;
+}
+
+.modal-crear form div * {
+  margin: 0;
+}
+
+.modal-crear form div p {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.modal-crear form div input {
+  padding: 2px 10px;
+}
+/*# sourceMappingURL=modal.css.map */

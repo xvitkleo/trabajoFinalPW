@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="usuarios.css">        
+        <link rel="stylesheet" href="../../rsrc/modal/modal.css">
+        <link rel="stylesheet" href="../../rsrc/nav/nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+         <nav class="navbar navbar-light fixed">
+            <span class="navbar-brand mb-0 h1">
+                <a style = "font-size: 1.5rem;"href="">CV Manager</a>
+            </span>
+            <div class="row">
+                <a class="nav-item nav-link boton-navbar active" href="usuarios.html">USUARIOS</a>
+                <a class="nav-item nav-link boton-navbar" href="../cuenta/cuenta.html">MI CUENTA</a>
+                <a class="nav-item nav-link boton-navbar" href="../../login.html">CERRAR SESION</a>
+              </div>
+          </nav>
+
+          <div class="lista-usuarios">    
+            <!-- lista -->
+            <form>
+                <table class="table table-secondary">
+                    <h2>Lista de Usuarios</h2>
+                    <div class="lista-usuarios_header">                       
+                        <button class="boton crear-usuario_btn">Crear Usuario</button>
+                        <h6 style="text-align: right;">Numero total de usuarios: 3</h6>
+                    </div>                    
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                        <th><a>Estado<select id="estado" size="1" style = "margin-left: 40px;">
+                            <option value="1">Ambos</option>
+                            <option value="2">Activo</option>
+                            <option value="3">Inactivo</option>
+                        </select></a></th>
+                        <th><button type="submit" class="btn btn-secondary">Buscar</button></th>
+                    </tr>
+                    <tr>
+                        <td>javier@gmail.com</td>
+                        <td>Ingeniero de Sistemas</td>
+                        <td>Activo</td>
+                        <td><button type="submit" class="btn btn-secondary">Actualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>ahuerta@gmail.com</td>
+                        <td>Ingeniero Civil</td>
+                        <td>Inactivo</td>
+                        <td><button type="submit" class="btn btn-secondary">Actualizar</button></td>
+                    </tr>
+                    <tr>
+                        <td>ramiro_12@yahoo.com</td>
+                        <td>Ingeniero Industrial</td>
+                        <td>Activo</td>
+                        <td><button type="submit" class="btn btn-secondary">Actualizar</button></td>
+                    </tr>
+                </table>
+            </form>
+          </div>
+
+          <!-- modal crear usuario -->
+          <div class="modal-crear">            
+            <form> 
+                <div class="close-modal">X</div>
+                <div><p>CREAR USUARIO</p></div>
+                <div>
+                    <input for="email" type="email" placeholder="Email" required>    
+                </div>
+                
+                <div>
+                    <input form="rol" type="text" placeholder="Rol" required>
+                </div>
+                
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select id="estado" size="1">
+                        <option value="1">Activo</option>
+                        <option value="2">Inactivo</option>
+                    </select>
+                </div>
+                
+                <div><button type="submit" class="boton registrar-usuario">Registrar</button></div>
+            </form>
+        </div>            
+    </body>
+    <script src="main.js"></script>
+</html>

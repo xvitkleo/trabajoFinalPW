@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar {
+    border-bottom: solid rgba(211, 211, 211, 0.61);
+    padding-right: 20px;
+    box-sizing: border-box;
+    a {
+        color: black;
+        font-weight: bold;
+        &:hover {            
+            text-decoration: underline;
+        }
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.container {    
+    flex-grow: 1;   
+    .align-container {        
+        display: flex;
+        flex-flow: column;
+        margin-top: 50px;
+        form {            
+            padding: 10px 50px 10px 50px;
+            border: solid 5px lightgray;
+            margin: auto;
+            div {
+                display: flex;
+                flex-flow: column;
+                margin: 20px;
+                p {
+                    margin: 1px;
+                }
+            }
+        }        
+    }
+}
+

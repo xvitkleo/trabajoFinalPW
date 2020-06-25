@@ -1,0 +1,46 @@
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.bloqueExp{
+    border: 3px solid blue;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+.barra{
+    background-color: rgb(39, 36, 36);
+    border: 1px solid black;
+    color: rgb(164, 179, 179);
+    margin-left: 45%;
+}
+#bloqueRegistro{
+    width: 800px;
+    height: 300px;
+    margin-left: 25%;
+    position: absolute;
+    background-color: rgb(61, 61, 238);
+    display: none;
+    color: aliceblue;
+    border: 3px solid blue;
+    border-radius: 15px;
+}
