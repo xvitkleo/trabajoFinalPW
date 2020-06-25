@@ -2,9 +2,17 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
 .container .align-container {
+  width: 55%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,29 +23,26 @@
   margin-top: 50px;
 }
 
-.container .align-container form {
+.container .align-container .content {
   padding: 10px 50px 10px 50px;
   border: solid 5px lightgray;
-  margin: auto;
 }
 
-.container .align-container form div {
+.container .align-container .content div {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.container .align-container form .nombre-apellido {
+.botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.container .align-container form .nombre-apellido div {
-  margin-right: 20px;
+.botones .boton {
+  margin: 0;
 }
-
-.boton {
-  width: 70%;
-  margin: 30px 15% 30px 15%;
-}
-/*# sourceMappingURL=cuenta.css.map */
+/*# sourceMappingURL=entidades.css.map */

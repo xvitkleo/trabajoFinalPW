@@ -13,13 +13,19 @@ body {
             padding: 10px 50px 10px 50px;
             border: solid 5px lightgray;
             margin: auto;
-            div {
+            width: 40%;
+            div:not(.nombre-apellido) {
                 display: flex;
                 flex-flow: column;
                 margin: 20px;
                 p {
                     margin: 1px;
                 }
+                border-bottom: solid 1px lightgray;
+            }
+            .nombre-apellido {
+                flex-flow: row;
+                margin: 0;
             }
         }        
     }

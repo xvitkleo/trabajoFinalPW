@@ -1,28 +1,28 @@
 .container {    
     flex-grow: 1;   
-    .align-container {        
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    .align-container {   
+        width: 55%;
         display: flex;
         flex-flow: column;
         margin-top: 50px;
-        form {            
+        .content {            
             padding: 10px 50px 10px 50px;
             border: solid 5px lightgray;
-            margin: auto;
             div {
                 margin-top: 10px;
                 margin-bottom: 10px;
-            }
-            .nombre-apellido {
-                display: flex;
-                div {
-                    margin-right: 20px;
-                }
             }
         }        
     }
 }
 
-.boton {
-    width: 70%;
-    margin: 30px 15% 30px 15%;
+.botones {
+    display: flex;
+    justify-content: space-between;
+    .boton {
+        margin: 0;
+    }
 }

@@ -29,9 +29,10 @@ body {
   padding: 10px 50px 10px 50px;
   border: solid 5px lightgray;
   margin: auto;
+  width: 40%;
 }
 
-.container .align-container form div {
+.container .align-container form div:not(.nombre-apellido) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,9 +41,18 @@ body {
       -ms-flex-flow: column;
           flex-flow: column;
   margin: 20px;
+  border-bottom: solid 1px lightgray;
 }
 
-.container .align-container form div p {
+.container .align-container form div:not(.nombre-apellido) p {
   margin: 1px;
+}
+
+.container .align-container form .nombre-apellido {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin: 0;
 }
 /*# sourceMappingURL=cuenta.css.map */
