@@ -30,32 +30,38 @@
 
   <div class="container" id="micuenta">
     <div class="align-container">
-      <form>
+      <form class="contactos_form">
         <div style="text-align: center"><h2>Mi Cuenta</h2></div>
         <div class="nombre-apellido">          
           <div>
             <label for="inputnombre">Nombre</label>
-            <input type="text" class="form-control" id="inputnombre" placeholder="nombre">
+            <input type="text" class="form-control" id="inputnombre" placeholder="nombre" maxlength='100' value="xxxxxx" required>
           </div>
           <div>
             <label for="inputapellido">Apellido</label>
-            <input type="text" class="form-control" id="inputapellido" placeholder="Apellido">
+            <input type="text" class="form-control" id="inputapellido" placeholder="Apellido" maxlength='100' value="xxxxxx" required>
           </div>
         </div>
 
         <div>
           <label for="inputtelefono">telefono</label>
-          <input type="text" class="form-control" id="inputtelefono" placeholder="xxxxxxxxxxxxx">
+          <input type="text" class="form-control" id="inputtelefono" placeholder="telefono" maxlength='9' minlength='9' value="xxxxxxxxx" required>
         </div>
 
         <div>
           <label for="inputurl">Url-Linkedin</label>
-          <input type="text" class="form-control" id="inputurl" placeholder="www.linkedin.com/....">
+          <input type="url" class="form-control" id="inputurl" placeholder="www.linkedin.com/...."  value="https://pe.linkedin.com/" required>
+        </div>
+
+        <div class="datos">
+          <label for="datos">Datos</label>
+          <textarea id="datos" cols="30" rows="5"></textarea>
         </div>
         
-        <button type="submit" class="boton">Guardar</button>
+        <button type="submit" class="boton guardar_btn">Guardar</button>
       </form>
     </div>     
   </div>   
 
+  <script src="main.js"></script>
 </body>

@@ -36,6 +36,30 @@
   margin-right: 20px;
 }
 
+.container .align-container form .datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.container .align-container form .datos textarea {
+  border-color: lightgray;
+  border-radius: 5px;
+}
+
+.container .align-container form .datos textarea:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 .boton {
   width: 70%;
   margin: 30px 15% 30px 15%;
